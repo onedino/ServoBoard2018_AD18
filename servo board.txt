@@ -1,0 +1,42 @@
+D980tw will be the servo we use
+
+https://www.mouser.hk/ProductDetail/Nexperia/74AHCV541APWJ?qs=sGAEpiMZZMuiiWkaIwCK2chgtecHdgXewymvCkSflKs%3D
+another buffer lol
+
+https://www.mouser.hk/ProductDetail/Nexperia/74AHCV244APWJ?qs=sGAEpiMZZMuiiWkaIwCK2bgmxBV%2FR64eEE4cbZSq%2Ff0%3D
+NXP 74AHC244APWJ
+need to use 3.3V instead of 5V since the VIH for 5V is 3.15V (not enough margin)
+$5/pc
+
+https://www.mouser.hk/ProductDetail/Nexperia/74HCT7541D118?qs=sGAEpiMZZMuiiWkaIwCK2RTxPVPWGz6WR0ehtyWzyrM%3D
+buffer that support TTL logic level.
+$16/pc
+
+buck converter
+LM3150 @ 10A output (design from ti webench)
+use 2 power stage, 1 for 2 high load monster torque, 4 "normal" load servo
+
+https://www.mouser.hk/ProductDetail/Bourns/SRP6030CA-3R3M?qs=sGAEpiMZZMsg%252By3WlYCkUwWVs%252BZAfRN3LMe2qTRl8w4%3D
+SRP6030CA-3R3M
+
+current sensor use INA2180A2
+
+Resistor use 12mR with <=2% tolerance with >300mW
+https://www.mouser.com/ProductDetail/Panasonic/ERJ-6CWFR012V?qs=sGAEpiMZZMtlleCFQhR%2FzWBUPyVBPFu1Q7i6XJneR5X2HWN9DPOc6A%3D%3D
+
+
+ADC use ADS1118 (4 ch input with SPI 3.3kSPS) SPI clock need to be <=100kHz
+input +-4.096V (only half of the bits are used)
+
+programming: Need to 
+
+
+servo king and moster torque need 1 type of servo board that needs PWM + 24V to 6-7V 10A buck
+need 1 current sensor for every 2 servo or 4 servo in low power mode
+need 1 current sensor for every 1 servo in high power mode
+
+
+Dymapixel board:
+need 24V to 11V buck converter
+need a RS485 to usb transceiver
+can ask ken to make that board
