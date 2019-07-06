@@ -35,6 +35,9 @@ servo king and moster torque need 1 type of servo board that needs PWM + 24V to 
 need 1 current sensor for every 2 servo or 4 servo in low power mode
 need 1 current sensor for every 1 servo in high power mode
 
+https://www.mouser.hk/datasheet/2/389/ips4260l-1310053.pdf
+
+
 
 Dymapixel board:
 need 24V to 11V buck converter
