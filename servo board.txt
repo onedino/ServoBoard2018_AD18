@@ -43,3 +43,15 @@ Dymapixel board:
 need 24V to 11V buck converter
 need a RS485 to usb transceiver
 can ask ken to make that board
+
+
+
+
+
+
+
+
+servo board ammendments
+
+DCconverter.schdoc 
+need to add extra resistor across pin 2 and pin 3 of U4 (1k)
